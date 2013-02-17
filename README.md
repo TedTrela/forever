@@ -76,6 +76,8 @@ You can use forever to run any kind of script continuously (whether it is writte
         forever stop my-daemon.js
 ```
 
+forever reads its options from a file config.json in its root directory.  The root directory is identified in the following order:  env var $FOREVERROOT, env var $HOME, /root
+
 There are [several examples][1] designed to test the fault tolerance of forever. Here's a simple usage example:
 
 ``` bash
